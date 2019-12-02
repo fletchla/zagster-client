@@ -10,7 +10,7 @@ $(greeter)
 
 function add(num1,num2) {
     answer = num1 + num2;
-    console.log("the sum of the two numbers is: ", answer);
+    console.log("the sum of the two numbers is: ", + answer);
     return answer;
 }
 
@@ -24,10 +24,6 @@ function greeter(name){
     }
 }
 
-function updateView() {
-    $.when ($.getJSON(BASE_URL + "/rides/count/per_month", perYear), 
-      ).then(updateChart);
-  }
 
 function updateGraph() {
 var ctx = document.getElementById('myChart').getContext('2d');
@@ -50,3 +46,8 @@ var chart = new Chart(ctx, {
     options: {}
 });
 }
+
+function updateView() {
+    $.when ($.getJSON(BASE_URL + "/rides/count/per_month", perYear), 
+      ).then(updateChart);
+  }
