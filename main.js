@@ -2,8 +2,9 @@
 $(updateGraph)
 
 function updateView() {
-    alert("Using jQuery...")
-}
+    $.when ($.getJSON(BASE_URL + "/rides/count/per_month", perYear), 
+      ).then(updateChart);
+  }
 
 function updateGraph() {
 var ctx = document.getElementById('myChart').getContext('2d');
