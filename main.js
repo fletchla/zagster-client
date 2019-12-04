@@ -45,8 +45,8 @@ function updateGraph( data ) {
             labels: rideMonths,
             datasets: [{
                 label: 'Rides per month',
-                backgroundColor: 'rgb(255, 99, 132)',
-                borderColor: 'rgb(255, 99, 132)',
+                backgroundColor: '#6dcff6',
+                borderColor: '#0b7cb1',
                 data: rideTotals
             }]
         },
