@@ -24,7 +24,7 @@ function updateGraph( data ) {
             //monthNum is key, value is number of rides:
             //{5: 2400} = May, 2400 rides
             var monthNum = Object.keys(data[year][i])[0];
-            var monthName = monthList[monthNum]; //5 = May
+            var monthName = monthList[monthNum-1]; //5 = May
             var rideCount = data[year][i][monthNum];
 
             labels.push(monthName + " " + year);
@@ -33,7 +33,7 @@ function updateGraph( data ) {
 
 
     }
-console.table(labels,values);
+console.log(labels,values);
 
 
     var ctx = document.getElementById('myChart').getContext('2d');
