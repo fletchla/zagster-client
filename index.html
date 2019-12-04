@@ -9,6 +9,7 @@
     integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
     crossorigin="anonymous"></script>
     
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="main.css">
 
     <script src="main.js"></script>
@@ -17,17 +18,28 @@
 </head>
 <body>
 
-<h1>Zagster Bike Share in Bend</h1>
+<div class="blue-box-top">
+    <div class="container">
+        <h1>Zagster Bike Share in Bend</h1>
+    </div>
+</div>    
 
-<h2>TODO</h2>
-<p>Total Rides</p>
 
-<script>
-    console.log();
-    </script>
+<div class="container">
+    <canvas id="myChart"></canvas>
+</div>
 
-<canvas id="myChart"></canvas>
 
+<div class="blue-box-bottom">
+    <div class="container">
+        <h2>About this chart</h2>
+        <p>Data is being pulled from <a href="https://zagster-service.herokuapp.com/rides/count/per_month" target="_blank">zagster-service.herokuapp.com</a>.  
+        Data is parsed using nested for loops. The chart is generated using chart.js and also uses the jQuery library.
+
+        </p>
+
+    </div>
+</div>
 
 </body>
 </html>

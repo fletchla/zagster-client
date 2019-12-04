@@ -1,7 +1,21 @@
 body {
-    font-family: "HelveticaNeue", "Arial", sans-serif;    
+    font-family: "Open Sans", "Arial", sans-serif;    
 }
 
-h2 {
-    font-size: 16pt;
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 40px;
+    font-weight: 700;
+
+}
+
+.blue-box-top,
+.blue-box-bottom {
+    background: #0b7cb1;
+    padding: 40px 10px;
+    color: #ffffff;
 }
