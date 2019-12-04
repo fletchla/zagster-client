@@ -12,6 +12,17 @@ function updateView() {
 
 function updateGraph( data ) {
     console.log (data);
+    var labels = [];
+    var values = [];
+    for (var year in data){
+        for (var i in data[year]){
+            console.log(data[year][i]);
+        }
+
+
+    }
+
+
     var ctx = document.getElementById('myChart').getContext('2d');
     var chart = new Chart(ctx, {
         // The type of chart we want to create
