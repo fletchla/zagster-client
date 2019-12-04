@@ -1,3 +1,8 @@
+html,body {
+    margin: 0;
+    padding: 0;
+}
+
 body {
     font-family: "Open Sans", "Arial", sans-serif;    
 }
@@ -18,4 +23,13 @@ h1 {
     background: #0b7cb1;
     padding: 40px 10px;
     color: #ffffff;
+}
+
+.blue-box-top a,
+.blue-box-bottom a {
+    color: #ffffff;
+}
+
+#myChart {
+    margin: 40px 0;
 }
