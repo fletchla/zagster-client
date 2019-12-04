@@ -1,12 +1,11 @@
 //$(updateView)
 
-const BASE_URL = "https://zagster-service.herokuapp.com/"
-$.getJSON(BASE_URL + "/rides/count/per_month", perYear)
+const BASE_URL = "https://zagster-service.herokuapp.com/";
 
-$(updateView)
-$(updateGraph)
-$(add)
-$(greeter)
+$(updateView);
+$(updateGraph);
+$(add);
+$(greeter);
 
 function add(num1,num2) {
     answer = num1 + num2;
